@@ -20,6 +20,7 @@ const Box = ({ scores, filter }) => {
     })
     .map((item, index) => ({ ...item, rank: index + 1 }));
 
+    console.log("TESTING API KEY:", import.meta.env.VITE_FIREBASE_API_KEY)
   return (
     <div className="">
       <ol className="bg-white rounded-lg">
