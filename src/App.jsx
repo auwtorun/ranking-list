@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import HomePage from "./HomePage";
-import Footer from "./components/Footer";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -15,7 +14,6 @@ const App = () => {
       )}
       <div className="">
         <HomePage setLoading={setLoading} />
-        <Footer />
       </div>
     </>
   );
